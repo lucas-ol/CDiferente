@@ -1,0 +1,331 @@
+/* *****************************************************GERAL***************************** */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Tomorrow', sans-serif;
+    margin: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+}
+
+.containerGeral {
+    padding-top: 50px;
+    height: 520px;
+}
+/* *****************************************************CEBECALHO***************************** */
+header {
+    background-color: #000;
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    top: 0px;
+    left: 0px
+}
+
+nav {
+    font-family: 'Indie Flower', cursive;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+    nav li {
+        list-style: none;
+        display: inline-block;
+        font-size: 18px;
+        width: 100px;
+        text-align: center;
+    }
+
+#pagAtual {
+    color: #0099ff;
+}
+
+    #pagAtual:before {
+        content: " < ";
+        color: white;
+    }
+
+    #pagAtual:after {
+        content: " > ";
+        color: white;
+    }
+
+nav a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover, a:active {
+    cursor: default;
+    color: #0099ff;
+}
+
+    nav a:hover:before {
+        content: " < ";
+    }
+
+    nav a:hover:after {
+        content: " > ";
+    }
+
+
+/* ***************************************************** HOME ***************************** */
+.containerHome {
+    padding-top: 50px;
+    height: 520px;
+}
+
+
+article {
+    width: 80%;
+    margin: auto;
+    font-size: 2em;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+/* ***************************************************** SOBRE ***************************** */
+.containerSobre {
+    margin: 30px 50px 10px 50px;
+}
+
+.txtSobre {
+    float: right;
+    width: 1000px;
+    padding-top: 20px;
+}
+
+.ftSobre:hover {
+    transform: scale(1.4) rotate(-5deg);
+}
+
+.ftSobre {
+    float: left;
+    transition: 0.7s;
+}
+
+
+/* ***************************************************** PORTFOLIO ***************************** */
+.containerPort {
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+#inputPort {
+    display: none;
+}
+
+#prev {
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+#next {
+    margin-left: 349px;
+    text-decoration: none;
+}
+
+.setas {
+    position: absolute;
+    top: 250px;
+    font-size: 90px;
+}
+
+/* ***************************************************** CONTATO *************************** */
+#contatos {
+    margin: 50px 0 50px 0;
+    text-align: right;
+}
+
+#txtContato {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#fone a {
+    color: #0099ff;
+}
+
+#fone {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+    #fone:before {
+        content: url("../img/logoWhats.png");
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+
+#email {
+    font-size: 22px;
+}
+
+    #email a {
+        color: #0099ff;
+    }
+
+    #email:before {
+        content: url("../img/iconeEmail.png");
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+
+.container {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.formContato {
+    width: 100%;
+    font-family: Tomorrow;
+}
+
+fieldset {
+    border: 1px solid #0099ff;
+    border-radius: 5px;
+}
+
+legend {
+    color: #0099ff;
+    font-size: 18px;
+    font-family: Tomorrow;
+    margin-bottom: 10px;
+}
+
+.input {
+    width: 100%;
+    color: #0099ff;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #0099ff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    font-family: Tomorrow;
+}
+
+.msg {
+    width: 100%;
+    color: #0099ff;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    border: 1px solid #0099ff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    height: 200px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: Tomorrow;
+}
+
+/* Esconde o input */
+input[type='file'] {
+    display: none
+}
+
+/* Aparência que terá o seletor de arquivo */
+#lbAnexo {
+    color: #0099ff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+    #lbAnexo:hover {
+        color: #000;
+    }
+
+.btEnviar {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #000;
+    height: 60px;
+    opacity: .6;
+    margin: 20px 0 20px 0;
+    cursor: pointer;
+    background: #0099ff;
+    display: block;
+    border: 1px solid #00f;
+}
+
+    .btEnviar:hover {
+        opacity: 1;
+    }
+
+
+
+
+
+
+
+/* ***************************************************** RODAPE ***************************** */
+footer {
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.rodape p {
+    padding-top: 15px;
+}
+
+.rodape {
+    position: relative;
+}
+
+.redeSoc {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+    .redeSoc li {
+        float: left;
+        margin-left: 25px;
+    }
+
+    .redeSoc a {
+        height: 46px;
+        width: 46px;
+        display: block;
+        text-indent: -9999px;
+    }
+
+        .redeSoc a[href*="facebook.com"] {
+            background-image: url(../img/logoFacePB.png);
+        }
+
+        .redeSoc a[href*="instagram.com"] {
+            background-image: url(../img/logoInstaPB.gif);
+        }
+
+/* ************************************   Resolução 360 x ********************* 
+@media (max-width: 500px) {
+	body { 
+		font-size: 12px; 
+	} */
+
+
+
+
+
+
+
+
+
+
+}
